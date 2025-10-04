@@ -1,10 +1,13 @@
 {
+  "homepage": "https://richard-osorio-rios.github.io/app-react-deploy/",
   "name": "app-react-deploy",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
